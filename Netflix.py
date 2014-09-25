@@ -24,7 +24,7 @@ Predicting the ratings of the movies for each customer
 def netflix_predict(movie, customer):
     import json
     customer_dict = json.load(open('mjh3664customer.txt', 'r')
-    movie_dict = json.load(open('mjh3664movie.txt', 'r')
+    movie_dict = json.load(open('mjh3664movie.txt', 'r'))
     cust_avg = json.load(open('savant-cacheUsers.txt', 'r'))
 
     if movie in movie_dict:
